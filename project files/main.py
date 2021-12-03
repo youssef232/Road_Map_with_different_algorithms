@@ -8,8 +8,8 @@ import Uniform_Cost_Algorithm
 
 
 root = Tk()
-root.title('Ai project')
-root.geometry("470x270")
+root.title('Search Algorithms on delta map project')
+root.geometry("600x270")
 
 #-------------------------------------------------------------------------------------------------------------------
 # creating labels
@@ -20,6 +20,7 @@ mylabel4 = Label(root, text="                         ")
 mylabel5 = Label(root, text="                         ")
 
 # putting labels on screen
+
 mylabel1.grid(row=0, column=0)
 mylabel2.grid(row=3, column=0)
 mylabel3.grid(row=6, column=0)
@@ -33,9 +34,11 @@ mylabel4.grid(row=9, column=0)
 clicked_source = StringVar()
 clicked_destination = StringVar()
 clicked_algorithm = StringVar()
+
+# initialization of dropdown minus
 clicked_source.set("shebin")
 clicked_destination.set("shebin")
-clicked_algorithm.set("Breadth First")
+clicked_algorithm.set("A*")
 
 option = [
 #el menofia
@@ -54,9 +57,9 @@ algorithms = OptionMenu(root, clicked_algorithm,
 
 
 # putting dropdown minus on screen
-source.grid(row=1, column=4)
-destination.grid(row=4, column=4)
-algorithms.grid(row=7, column=4)
+source.grid(row=1, column=3)
+destination.grid(row=4, column=3)
+algorithms.grid(row=7, column=3)
 
 #--------------------------------------------------------------------------------------
 
@@ -67,8 +70,8 @@ def execute():
     end = clicked_destination.get()
     method = clicked_algorithm.get()
 
-    if (start=="shebin" and end=="shebin" and method=="Breadth First"):
-        messagebox.showinfo('error! something is wrong',
+    if (start==end):
+        messagebox.showinfo('something is wrong!',
                             "make sure source and destination don't equal each other ")
 
     else:
@@ -93,8 +96,8 @@ def execute():
              huristic, cost, result_path = A_Star_Algorithm.a_star(start, end)
              print('path: ')
              print(result_path)
-             #messagebox.showinfo('cost',
-                                # "the cost is:  " + cost)
+             print('cost: ')
+             print(cost)
              map_functions.create_marks(result_path)
              map_functions.create_routes()
         else:
@@ -102,13 +105,15 @@ def execute():
 
              print('path: ')
              print(result_path)
+             print('cost: ')
+             print(cost)
              map_functions.create_marks(result_path)
              map_functions.create_routes()
         root.quit()
 #----------------------------------------------------------------------
 # creating button
-search = Button(root, text="Search", padx=40, command=execute)
-exit_button = Button(root, text="Exit program", padx=40, command=root.quit)
+search = Button(root, text="Search", padx=40, command=execute, bg='Maroon', fg='white')
+exit_button = Button(root, text="Exit program", padx=40, command=root.quit, bg='Maroon', fg='white')
 
 # putting button on screen
 search.grid(row=10, column=1, columnspan=2)
