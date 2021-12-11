@@ -2,7 +2,7 @@ import math
 
 #----------------------------------------------------------------------------------------------------------------
 
-GRAPH= {'shebin': {'tala': 18, 'el shohada': 16.5,'minuf':16.4,'el-bagour':14.6,'quwaysna':18.7,'birket as sab': 14},
+GRAPH= {        'shebin': {'tala': 18, 'el shohada': 16.5,'minuf':16.4,'el-bagour':14.6,'quwaysna':18.7,'birket as sab': 14},
                'minuf': {'el shohada':18.2, 'shebin': 16.1,'el-bagour':11.4,'ashmun':27,'el sadat city':55.9},
                'tala': {'birket as sab':18.1,'shebin': 18,'el shohada':14.4,'Kafr El-Zayat':25.6,'tanta':15.3,'As Santah':29.2},
                'birket as sab': {'tala':18.1, 'shebin': 14,'quwaysna':13.3,'As Santah':16,'zefta':24.5},

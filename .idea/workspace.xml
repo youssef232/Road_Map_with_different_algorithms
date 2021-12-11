@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4faf4e9a-a886-4250-98ff-4082d047fe5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4faf4e9a-a886-4250-98ff-4082d047fe5b" name="Changes" comment="version 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project files/A_Star_Algorithm.py" beforeDir="false" afterPath="$PROJECT_DIR$/project files/A_Star_Algorithm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project files/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/project files/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project files/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/project files/map.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,6 +171,14 @@
       <option name="presentableId" value="Default" />
       <updated>1637094575180</updated>
     </task>
+    <task id="LOCAL-00001" summary="version 2">
+      <created>1638533665176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638533665176</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -177,10 +186,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="version 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 2" />
   </component>
 </project>
